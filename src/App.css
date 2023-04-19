@@ -1,0 +1,142 @@
+/* styles for sidenavbar */
+*{
+  margin: 0;
+  padding: 0;
+ text-decoration: none;
+}
+.container{
+  display:flex;
+   
+}
+.main{
+  width: 100%;
+  padding: 20px;
+
+}
+
+.sidenavbar{
+  background-color: lightskyblue;
+  color: aliceblue;
+  height:90vh;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.topsection{
+  display: flex;
+  text-align: center;
+  padding: 20px 15px;
+  color: black;
+  font-size: 15px;
+
+}
+
+.logo{
+  font-size: 20px;
+}
+
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-top: 8px;
+}
+.bars:hover{
+  cursor: pointer;
+}
+
+.link{
+  display: flex;
+  color :black;
+  padding:10px 11px;
+  gap: 15px;
+  transition: all 0.3s;
+
+}
+.link:hover{
+  background-color:rgb(238, 237, 235) ;
+  color:black;
+  transition:all  0.5s;
+  
+}
+
+.active{
+  background-color:white;
+  border-radius: 5px;
+  color:black;
+  transition:all  0s;
+}
+.active:hover{
+  background-color: white;
+  color:black;
+  
+}
+
+.icon, .link_text{
+  font-size: 20px;
+}
+
+@media screen and (max-height: 510px) {
+  .sidenavbar {
+    height:93vh
+  }
+}
+
+
+/* styles for header component */
+.header-logo{
+  display:flex;
+  background-color: rgb(177, 229, 250);
+  height:60px;
+  justify-content: space-between;
+  align-items: centre;
+  padding: 5px;
+  border-bottom: 1px solid rgb(231, 231, 233);
+}
+.iq-logo{
+width: 130px;
+height: 70px;
+size: 50px;
+ 
+}
+
+.header-icons{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.bell,.logout{
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+@media  screen and  (max-width:310px){
+  .header-logo{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .iq-logo{
+    margin-bottom: 1rem;
+  }
+  
+ 
+}
+
+
+
+
+
+/* button icons in header component logout and bell */
+.header-icons button {
+  border: 1px solid rgb(218, 213, 213);
+  background-color: transparent;
+  padding: 5px;
+  margin-right: 5px;
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  
+}
+

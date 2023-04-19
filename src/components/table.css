@@ -1,0 +1,72 @@
+/* .table-container {
+  overflow-x: auto;
+} */
+
+.my-table {
+  width: 100%;
+  max-width: 100%; 
+ 
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.my-table td,
+.my-table th {
+  padding: 12px 15px;
+  border: 5px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #131111;
+}
+
+.my-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.my-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Sort icons */
+.fasortdown {
+  margin-left: 5px;
+}
+
+.fasortup {
+  margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+  .my-table thead {
+    display: none;
+  }
+
+  .my-table,
+  .my-table tbody,
+  .my-table tr,
+  .my-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .my-table tr {
+    margin-bottom: 15px;
+  }
+
+  .my-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .my-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
